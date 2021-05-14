@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" [style.background]="rgba">
+  <div class="container container-fluid">
+<!--    <a class="navbar-brand" href="home" style="display: grid; grid-template-columns: auto auto">-->
+<!--      <img src="../../../assets/images/optimal-white-logo-only.svg" style="max-height: 30px">-->
+<!--      <p style="font-size: 24px">OPTIMAL FITNESS</p>-->
+<!--    </a>-->
+    <a class="navbar-brand" href="home" style="display: grid; grid-template-columns: auto auto">
+      <img src="../../../assets/images/optimal-white-logo-only.png" style="max-height: 26px; margin-right: 16px">
+      <p class="zero">OPTIMAL FITNESS</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="home" [ngClass]="{'active' : path === 'home'}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mission" [ngClass]="{'active' : path === 'mission'}">Mission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="training" [ngClass]="{'active' : path === 'training'}">Training</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="staff" [ngClass]="{'active' : path === 'staff'}">Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="locations" [ngClass]="{'active' : path === 'locations'}">Locations</a>
+        </li>
+      </ul>
+<!--      INSERT SOCIAL BUTTONS HERE      -->
+      <i class="bi-twitter white-icon"></i>
+      <i class="bi-instagram white-icon"></i>
+      <i class="bi-facebook white-icon"></i>
+    </div>
+  </div>
+</nav>
