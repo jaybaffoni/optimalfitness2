@@ -25,6 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutLandingPanelComponent } from './pages/about/panels/about-landing-panel/about-landing-panel.component';
 import { LandingPanelComponent } from './components/landing-panel/landing-panel.component';
 import { StaffLandingPanelComponent } from './pages/staff/panels/staff-landing-panel/staff-landing-panel.component';
+import { LocationsLandingPanelComponent } from './pages/locations/panels/locations-landing-panel/locations-landing-panel.component';
+import { TrainingLandingPanelComponent } from './pages/training/panels/training-landing-panel/training-landing-panel.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { StaffLandingPanelComponent } from './pages/staff/panels/staff-landing-p
     TwoColumnPanelComponent,
     AboutLandingPanelComponent,
     LandingPanelComponent,
-    StaffLandingPanelComponent
+    StaffLandingPanelComponent,
+    LocationsLandingPanelComponent,
+    TrainingLandingPanelComponent
   ],
   imports: [
     BrowserModule,
