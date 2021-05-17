@@ -22,6 +22,8 @@ import { TitlePanelComponent } from './components/title-panel/title-panel.compon
 import { PersonCardComponent } from './components/person-card/person-card.component';
 import { TwoColumnPanelComponent } from './components/two-column-panel/two-column-panel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutLandingPanelComponent } from './pages/about/panels/about-landing-panel/about-landing-panel.component';
+import { LandingPanelComponent } from './components/landing-panel/landing-panel.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TrainingPageComponent,
     TitlePanelComponent,
     PersonCardComponent,
-    TwoColumnPanelComponent
+    TwoColumnPanelComponent,
+    AboutLandingPanelComponent,
+    LandingPanelComponent
   ],
   imports: [
     BrowserModule,
