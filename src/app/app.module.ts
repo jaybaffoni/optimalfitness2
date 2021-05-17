@@ -24,6 +24,7 @@ import { TwoColumnPanelComponent } from './components/two-column-panel/two-colum
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutLandingPanelComponent } from './pages/about/panels/about-landing-panel/about-landing-panel.component';
 import { LandingPanelComponent } from './components/landing-panel/landing-panel.component';
+import { StaffLandingPanelComponent } from './pages/staff/panels/staff-landing-panel/staff-landing-panel.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { LandingPanelComponent } from './components/landing-panel/landing-panel.
     PersonCardComponent,
     TwoColumnPanelComponent,
     AboutLandingPanelComponent,
-    LandingPanelComponent
+    LandingPanelComponent,
+    StaffLandingPanelComponent
   ],
   imports: [
     BrowserModule,
