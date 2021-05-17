@@ -1,0 +1,46 @@
+.panel-title {
+  width: 100%;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.panel-subtitle {
+  width: 100%;
+  //text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 24px;
+}
+
+.panel-button {
+  //margin-left: auto;
+  //margin-right: auto;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.padded {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.background {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+}
+
+.dark {
+  color: white !important;
+}
+
+.grid-rows {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr auto auto 1fr;
+}

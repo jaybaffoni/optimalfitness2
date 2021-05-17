@@ -3,8 +3,8 @@
     <div class="container padded" [ngClass]="{'dark' : dark}">
       <h1 class="panel-title">{{title}}</h1>
       <h4 class="panel-subtitle">{{subtitle}}</h4>
-      <div *ngIf="buttonText" class="button-container">
-        <a class="btn panel-button" [ngClass]="dark ? 'btn-outline-light' : 'btn-outline-dark'" [href]="buttonLink">{{buttonText}}</a>
+      <div *ngIf="buttonLink" class="button-container">
+        <a class="btn" [ngClass]="dark ? 'btn-outline-light' : 'btn-outline-dark'" [href]="buttonLink">{{buttonText}}</a>
       </div>
       <ng-content></ng-content>
     </div>

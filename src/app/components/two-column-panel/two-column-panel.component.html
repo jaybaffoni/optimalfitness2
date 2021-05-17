@@ -1,0 +1,32 @@
+<app-panel>
+  <div style="width: 100%" [style.background]="formattedBg" [ngClass]="{'background' : background}">
+    <div class="container padded" [ngClass]="{'dark' : dark}">
+      <h1 class="panel-title">{{title}}</h1>
+      <div class="row">
+        <div *ngIf="!leftImage" class="col-md-6">
+          <div class="grid-rows">
+            <div></div>
+            <h4 class="panel-subtitle">{{subtitle}}</h4>
+            <div *ngIf="buttonText" class="button-container">
+              <a class="btn panel-button" [ngClass]="dark ? 'btn-outline-light' : 'btn-outline-dark'" [href]="buttonLink">{{buttonText}}</a>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ng-content></ng-content>
+        </div>
+        <div *ngIf="leftImage" class="col-md-6">
+          <div class="grid-rows">
+            <div></div>
+            <h4 class="panel-subtitle">{{subtitle}}</h4>
+            <div *ngIf="buttonText" class="button-container">
+              <a class="btn panel-button" [ngClass]="dark ? 'btn-outline-light' : 'btn-outline-dark'" [href]="buttonLink">{{buttonText}}</a>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-panel>

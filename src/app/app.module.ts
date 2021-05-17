@@ -20,6 +20,8 @@ import { TrainingPageComponent } from './pages/training/training-page/training-p
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TitlePanelComponent } from './components/title-panel/title-panel.component';
 import { PersonCardComponent } from './components/person-card/person-card.component';
+import { TwoColumnPanelComponent } from './components/two-column-panel/two-column-panel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,14 @@ import { PersonCardComponent } from './components/person-card/person-card.compon
     StaffPageComponent,
     TrainingPageComponent,
     TitlePanelComponent,
-    PersonCardComponent
+    PersonCardComponent,
+    TwoColumnPanelComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
