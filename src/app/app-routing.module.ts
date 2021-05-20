@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'mission', component: AboutPageComponent },
   { path: 'training', component: TrainingPageComponent },
   { path: 'staff', component: StaffPageComponent },
+  { path: 'staff/:person', component: StaffPageComponent },
   { path: 'locations', component: LocationsPageComponent }
 ];
 

@@ -7,13 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PersonCardComponent implements OnInit {
 
-  @Input() name: string;
-  @Input() title: string;
-  @Input() bio: string;
-  @Input() avatar: string;
-  @Input() facebook: string;
-  @Input() instagram: string;
-  @Input() twitter: string;
+  @Input() person: any;
 
   constructor() {
   }

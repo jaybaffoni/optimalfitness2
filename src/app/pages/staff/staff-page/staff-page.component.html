@@ -1,1 +1,8 @@
-<staff-landing-panel></staff-landing-panel>
+<div *ngIf="!person">
+  <staff-landing-panel></staff-landing-panel>
+  <staff-list-panel></staff-list-panel>
+</div>
+<div *ngIf="person">
+  <app-bio [personData]="personData[person]"></app-bio>
+</div>
+
