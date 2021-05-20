@@ -28,3 +28,9 @@
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
+
+@media only screen and (max-width: 800px) {
+  .panel-subtitle {
+    width: 90%;
+  }
+}
