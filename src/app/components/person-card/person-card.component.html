@@ -1,3 +1,13 @@
-<div>
-  <img [src]="avatar" class="avatar-image"/>
+<div class="row">
+  <div class="col-lg-3">
+    <img src="https://picsum.photos/200/300" class="person-card-image"/>
+  </div>
+  <div class="col-lg-9">
+    <h1>{{person.name}}</h1>
+    <h4>{{person.title}}</h4>
+    <h4>{{person.credentials}}</h4>
+    <p *ngFor="let text of person.bio">{{text}}</p>
+  </div>
+
+
 </div>

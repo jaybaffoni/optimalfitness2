@@ -26,9 +26,4 @@ export class HeaderBarComponent implements OnInit {
 
     this.path = window.location.href.substr(origin.length + 1);
   }
-
-  toggle(): void {
-    console.log('click');
-  }
-
 }

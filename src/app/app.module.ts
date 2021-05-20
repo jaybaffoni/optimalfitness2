@@ -27,6 +27,9 @@ import { LandingPanelComponent } from './components/landing-panel/landing-panel.
 import { StaffLandingPanelComponent } from './pages/staff/panels/staff-landing-panel/staff-landing-panel.component';
 import { LocationsLandingPanelComponent } from './pages/locations/panels/locations-landing-panel/locations-landing-panel.component';
 import { TrainingLandingPanelComponent } from './pages/training/panels/training-landing-panel/training-landing-panel.component';
+import { StaffListPanelComponent } from './pages/staff/panels/staff-list-panel/staff-list-panel.component';
+import {CommonModule} from '@angular/common';
+import { BioComponent } from './components/bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -52,14 +55,17 @@ import { TrainingLandingPanelComponent } from './pages/training/panels/training-
     LandingPanelComponent,
     StaffLandingPanelComponent,
     LocationsLandingPanelComponent,
-    TrainingLandingPanelComponent
+    TrainingLandingPanelComponent,
+    StaffListPanelComponent,
+    BioComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    NgbModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FontAwesomeModule,
+        NgbModule,
+        CommonModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

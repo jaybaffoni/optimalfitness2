@@ -1,0 +1,18 @@
+<div class="bio">
+  <img [src]="coverImgSrc" class="cover-image"/>
+  <div class="container full-height">
+    <img [src]="imgSrc" class="bio-image"/>
+    <h1 class="bio-name bio-info">{{personData.name}}</h1>
+    <h3 class="bio-title bio-info">{{personData.title}}</h3>
+    <h4 class="bio-credentials bio-info">{{personData.credentials}}</h4>
+    <div *ngFor="let section of personData.bio; let i = index">
+      <p *ngIf="i < 3" class="bio-text bio-info">{{section}}</p>
+    </div>
+    <div *ngIf="personData.middleImg" class="middle-image-container">
+      <img [src]="middleImgSrc" class="middle-image"/>
+    </div>
+    <div *ngFor="let section of personData.bio; let i = index">
+      <p *ngIf="i >= 3" class="bio-text bio-info">{{section}}</p>
+    </div>
+  </div>
+</div>
