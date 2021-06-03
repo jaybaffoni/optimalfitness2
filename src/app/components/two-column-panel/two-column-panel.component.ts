@@ -14,6 +14,7 @@ export class TwoColumnPanelComponent implements OnInit {
   @Input() buttonLink: string;
   @Input() buttonText = 'Learn More';
   @Input() leftImage = false;
+  @Input() bgColor = 'white';
 
   public formattedBg = '';
 
@@ -23,6 +24,8 @@ export class TwoColumnPanelComponent implements OnInit {
   ngOnInit(): void {
     if (this.background) {
       this.formattedBg = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${this.background}')`;
+    } else {
+      this.formattedBg = this.bgColor;
     }
   }
 

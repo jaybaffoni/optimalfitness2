@@ -34,6 +34,7 @@ import { LexingtonPanelComponent } from './pages/locations/panels/lexington-pane
 import { BeachHousePanelComponent } from './pages/locations/panels/beach-house-panel/beach-house-panel.component';
 import { CorporatePanelComponent } from './pages/locations/panels/corporate-panel/corporate-panel.component';
 import { InHomePanelComponent } from './pages/locations/panels/in-home-panel/in-home-panel.component';
+import { MindbodyPanelComponent } from './pages/training/panels/mindbody-panel/mindbody-panel.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { InHomePanelComponent } from './pages/locations/panels/in-home-panel/in-
     LexingtonPanelComponent,
     BeachHousePanelComponent,
     CorporatePanelComponent,
-    InHomePanelComponent
+    InHomePanelComponent,
+    MindbodyPanelComponent
   ],
     imports: [
         BrowserModule,

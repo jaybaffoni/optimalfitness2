@@ -9,6 +9,7 @@ export class StaffListPanelComponent implements OnInit {
 
   public staff = [
     {
+      id: 'bryan',
       name: 'Bryan Doo',
       title: 'Owner and Founder of Optimal Fitness',
       credentials: 'BS, MS- ACSM/NASM- CPT, NSCA CSCS',
@@ -20,6 +21,7 @@ export class StaffListPanelComponent implements OnInit {
         'Doo has also consulted and trained various NBA, NHL, EPL, Olympic, WTA, elite athletes and more. He is a frequent speaker regarding sports and athletic development, injury prevention and team training at local and national conferences. He also served as a guest lecturer at Brown University as part of the Exercise Physiology/Biomechanics course. ']
     },
     {
+      id: 'laurie',
       name: 'Laurie Lamoureux Borrelli',
       title: 'Director of Optimal Fitness & Strength & Conditioning',
       credentials: 'NSCA-CSCS, NASM-CPT,  B.S. in Sports Medicine, Merrimack College',
@@ -30,6 +32,7 @@ export class StaffListPanelComponent implements OnInit {
         ' At Optimal Fitness Boston, Laurie trains at clients homes, in the Lexington facility, virtually via Zoom and runs our strength and conditioning camps for athletes.']
     },
     {
+      id: 'zach',
       name: 'Zach Wiernicki',
       title: 'Exercise Specialist',
       credentials: 'NASM-CPT, CES and PES;  B.S. in Sports and Exercise Science, Messiah College',
@@ -39,6 +42,7 @@ export class StaffListPanelComponent implements OnInit {
         'At Optimal Fitness Boston, Zach trains with corporate partners; at clients homes: with professional, collegiate and high school athletes, and via Zoom.']
     },
     {
+      id: 'amanda',
       name: 'Amanda Carvalho',
       title: 'Site Coordinator/Personal Trainer',
       credentials: 'NASM-CPT and PES;B.S. in Allied Health Science, University of Connecticut; M.S. in Exercise Science and Health Promotion, California University of Pennsylvania',
@@ -50,6 +54,7 @@ export class StaffListPanelComponent implements OnInit {
         'At Optimal Fitness Boston, Amanda trains virtually via Zoom.']
     },
     {
+      id: 'jack',
       name: 'Jack Baldwin',
       title: 'Performance Coach',
       credentials: 'NSCA-CSCS; M.S. in Kinesiology, Long Beach State University; B.S. in Applied Exercise Science, Springfield College',
@@ -60,6 +65,7 @@ export class StaffListPanelComponent implements OnInit {
         'At Optimal Fitness, Jack trains primarily at the Beach House and Lexington.']
     },
     {
+      id: 'eryenne',
       name: 'Eryenne Brinn',
       title: 'Group Instructor/ Personal Trainer',
       credentials: 'NASM-CPT, B.S. in Sport Management, Ithaca College',
@@ -69,6 +75,7 @@ export class StaffListPanelComponent implements OnInit {
         'At Optimal Fitness Boston, Eryenne trains with corporate partners, at clients homes, in the Lexington facility and virtually via Zoom.']
     },
     {
+      id: 'corinne',
       name: 'Corinne Donovan',
       title: 'Group Instructor/ Personal Trainer',
       credentials: 'ISSA-CPT',
