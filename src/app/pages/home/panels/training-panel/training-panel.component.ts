@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {faVolleyballBall, faDumbbell, faLaptopHouse, faBuilding} from '@fortawesome/free-solid-svg-icons';
+import {faVolleyballBall, faDumbbell, faLaptopHouse, faBuilding, faUsers, faStopwatch} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'training-panel',
@@ -14,6 +14,8 @@ export class TrainingPanelComponent implements OnInit {
   dumbbell = faDumbbell;
   laptop = faLaptopHouse;
   building = faBuilding;
+  users = faUsers;
+  stopwatch = faStopwatch;
 
   constructor() {
   }

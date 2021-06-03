@@ -30,6 +30,10 @@ import { TrainingLandingPanelComponent } from './pages/training/panels/training-
 import { StaffListPanelComponent } from './pages/staff/panels/staff-list-panel/staff-list-panel.component';
 import {CommonModule} from '@angular/common';
 import { BioComponent } from './components/bio/bio.component';
+import { LexingtonPanelComponent } from './pages/locations/panels/lexington-panel/lexington-panel.component';
+import { BeachHousePanelComponent } from './pages/locations/panels/beach-house-panel/beach-house-panel.component';
+import { CorporatePanelComponent } from './pages/locations/panels/corporate-panel/corporate-panel.component';
+import { InHomePanelComponent } from './pages/locations/panels/in-home-panel/in-home-panel.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,11 @@ import { BioComponent } from './components/bio/bio.component';
     LocationsLandingPanelComponent,
     TrainingLandingPanelComponent,
     StaffListPanelComponent,
-    BioComponent
+    BioComponent,
+    LexingtonPanelComponent,
+    BeachHousePanelComponent,
+    CorporatePanelComponent,
+    InHomePanelComponent
   ],
     imports: [
         BrowserModule,
