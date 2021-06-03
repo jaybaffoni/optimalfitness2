@@ -48,10 +48,11 @@ h1, h2, h3, h4, h5, h6, p, span, a, button {
 
 .rise {
   transition: transform 250ms;
+  z-index: 1;
 }
 
 .rise:hover {
-  transform: translateY(-10px);
+  transform: translateY(-24px);
 }
 
 .app-image {
