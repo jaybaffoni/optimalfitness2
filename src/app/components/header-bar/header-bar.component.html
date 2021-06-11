@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" [style.background]="rgba">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="z-index: 10001; background: #293d9b; border-bottom: 1px solid white">
   <div class="container container-fluid">
 <!--    <a class="navbar-brand" href="home" style="display: grid; grid-template-columns: auto auto">-->
 <!--      <img src="../../../assets/images/optimal-white-logo-only.svg" style="max-height: 30px">-->
@@ -6,7 +6,7 @@
 <!--    </a>-->
     <a class="navbar-brand" href="home" style="display: grid; grid-template-columns: auto auto">
       <img src="../../../assets/images/optimal-white-logo-only.png" style="max-height: 26px; margin-right: 16px">
-      <p class="zero">OPTIMAL FITNESS</p>
+      <p style="margin-top: 5px; margin-bottom: 0px" >OPTIMAL FITNESS</p>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,10 @@
           <a class="nav-link" href="home" [ngClass]="{'active' : path === 'home'}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mission" [ngClass]="{'active' : path === 'mission'}">Mission</a>
+          <a class="nav-link" href="mission" [ngClass]="{'active' : path === 'mission'}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="locations" [ngClass]="{'active' : path === 'locations'}">Locations</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="training" [ngClass]="{'active' : path === 'training'}">Training</a>
@@ -25,11 +28,7 @@
         <li class="nav-item">
           <a class="nav-link" href="staff" [ngClass]="{'active' : path === 'staff'}">Staff</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="locations" [ngClass]="{'active' : path === 'locations'}">Locations</a>
-        </li>
       </ul>
-<!--      INSERT SOCIAL BUTTONS HERE      -->
       <a href="https://www.instagram.com/optimalfitnessboston/?hl=en"><i class="bi-instagram white-icon"></i></a>
       <a href="https://www.facebook.com/dooitright/"><i class="bi-facebook white-icon"></i></a>
       <a href="mailto:optimalfitnessboston@gmail.com?Subject=Hello"><i class="bi-envelope-open white-icon"></i></a>

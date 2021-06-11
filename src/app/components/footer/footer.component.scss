@@ -1,6 +1,11 @@
 .footer {
   color: white;
-  background-color: black;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  background-color: #293d9b;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
 }

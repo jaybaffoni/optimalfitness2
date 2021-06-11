@@ -7,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrainingPageComponent implements OnInit {
 
-  public personalSubtitle = 'Personal Training Text';
+  public ptImages = [
+    {path : './assets/images/lexington-workout.jpg'},
+    {path : './assets/images/lexington.JPG'},
+    {path : './assets/images/sunrise.jpg'}
+  ];
 
-  public groupSubtitle = 'Small Group Text';
+  public scImages = [
+    {path : './assets/images/lexington-workout.jpg'},
+    {path : './assets/images/lexington.JPG'},
+    {path : './assets/images/sunrise.jpg'}
+  ];
 
-  public sportSubtitle = 'Athlete Group Text';
-
-  public circuitSubtitle = 'Circuit Training Text';
+  public acImages = [
+    {path : './assets/images/lexington-workout.jpg'},
+    {path : './assets/images/lexington.JPG'},
+    {path : './assets/images/sunrise.jpg'}
+  ];
 
   constructor() {
   }

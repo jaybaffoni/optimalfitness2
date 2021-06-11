@@ -1,0 +1,7 @@
+<div class="grid">
+  <h1 mat-dialog-title>{{title}}</h1>
+  <fa-icon [icon]="windowClose" size="2x" style="margin-left: 16px; cursor: pointer" (click)="close()"></fa-icon>
+</div>
+<div mat-dialog-content>
+  <ng-content></ng-content>
+</div>

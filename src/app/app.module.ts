@@ -35,6 +35,17 @@ import { BeachHousePanelComponent } from './pages/locations/panels/beach-house-p
 import { CorporatePanelComponent } from './pages/locations/panels/corporate-panel/corporate-panel.component';
 import { InHomePanelComponent } from './pages/locations/panels/in-home-panel/in-home-panel.component';
 import { MindbodyPanelComponent } from './pages/training/panels/mindbody-panel/mindbody-panel.component';
+import { QuinPanelComponent } from './pages/locations/panels/quin-panel/quin-panel.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import { ContactDialogComponent } from './components/contact-dialog/contact-dialog.component';
+import { LexingtonMbWidgetComponent } from './components/lexington-mb-widget/lexington-mb-widget.component';
+import { PopupComponent } from './components/popup/popup.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatChipsModule } from "@angular/material/chips";
+import { SlideshowModule } from "ng-simple-slideshow";
+import { IvyCarouselModule } from "angular-responsive-carousel";
 
 @NgModule({
   declarations: [
@@ -67,16 +78,30 @@ import { MindbodyPanelComponent } from './pages/training/panels/mindbody-panel/m
     BeachHousePanelComponent,
     CorporatePanelComponent,
     InHomePanelComponent,
-    MindbodyPanelComponent
+    MindbodyPanelComponent,
+    QuinPanelComponent,
+    DialogComponent,
+    ContactDialogComponent,
+    LexingtonMbWidgetComponent,
+    PopupComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FontAwesomeModule,
-        NgbModule,
-        CommonModule
-    ],
-  providers: [],
+  imports : [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    NgbModule,
+    CommonModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatTabsModule,
+    MatChipsModule,
+    SlideshowModule,
+    IvyCarouselModule
+  ],
+  providers: [{
+    provide: MatDialogRef,
+    useValue: {}
+  }],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

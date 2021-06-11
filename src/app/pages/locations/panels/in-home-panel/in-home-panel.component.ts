@@ -7,7 +7,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class InHomePanelComponent implements OnInit {
 
-  public subtitle = 'subtitle';
+  public images = [
+    {path : './assets/images/inhome1.JPG'},
+    {path : './assets/images/inhome2.jpg'},
+    {path : './assets/images/inhome3.jpg'},
+    {path : './assets/images/inhome4.jpg'}
+  ];
 
   constructor() {
   }
