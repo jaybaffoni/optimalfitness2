@@ -46,6 +46,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from "@angular/material/chips";
 import { SlideshowModule } from "ng-simple-slideshow";
 import { IvyCarouselModule } from "angular-responsive-carousel";
+import { MissionPanelComponent } from './pages/about/panels/mission-panel/mission-panel.component';
+import { TestimonialPanelComponent } from './pages/about/panels/testimonial-panel/testimonial-panel.component';
+import { NewsletterPanelComponent } from './pages/about/panels/newsletter-panel/newsletter-panel.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +86,10 @@ import { IvyCarouselModule } from "angular-responsive-carousel";
     DialogComponent,
     ContactDialogComponent,
     LexingtonMbWidgetComponent,
-    PopupComponent
+    PopupComponent,
+    MissionPanelComponent,
+    TestimonialPanelComponent,
+    NewsletterPanelComponent
   ],
   imports : [
     BrowserModule,
