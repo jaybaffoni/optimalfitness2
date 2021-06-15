@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsletterPanelComponent implements OnInit {
 
+  public message: string = '';
+  public subject: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
