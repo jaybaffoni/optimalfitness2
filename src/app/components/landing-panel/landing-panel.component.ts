@@ -18,7 +18,7 @@ export class LandingPanelComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.background) {
-      this.formattedBg = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(41,61,155, 0.25)), url('${this.background}')`;
+      this.formattedBg = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.4)), url('${this.background}')`;
     }
   }
 
