@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="z-index: 10001; background: black; border-bottom: 1px solid white">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="z-index: 10001; background-color: #000034; border-bottom: 1px solid white">
   <div class="container container-fluid">
 <!--    <a class="navbar-brand" href="home" style="display: grid; grid-template-columns: auto auto">-->
 <!--      <img src="../../../assets/images/optimal-white-logo-only.svg" style="max-height: 30px">-->
@@ -14,19 +14,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="home" [ngClass]="{'active' : path === 'home'}">Home</a>
+          <a class="nav-link" href="home" [ngClass]="{'active' : path.startsWith('home')}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mission" [ngClass]="{'active' : path === 'mission'}">About Us</a>
+          <a class="nav-link" href="about" [ngClass]="{'active' : path.startsWith('about')}">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="locations" [ngClass]="{'active' : path === 'locations'}">Locations</a>
+          <a class="nav-link" href="locations" [ngClass]="{'active' : path.startsWith('locations')}">Locations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="training" [ngClass]="{'active' : path === 'training'}">Training</a>
+          <a class="nav-link" href="training" [ngClass]="{'active' : path.startsWith('training')}">Training</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="staff" [ngClass]="{'active' : path === 'staff'}">Staff</a>
+          <a class="nav-link" href="staff" [ngClass]="{'active' : path.startsWith('staff')}">Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact" [ngClass]="{'active' : path.startsWith('contact')}">Contact</a>
         </li>
       </ul>
       <a href="https://www.instagram.com/optimalfitnessboston/?hl=en"><i class="bi-instagram white-icon"></i></a>

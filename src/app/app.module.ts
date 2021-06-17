@@ -49,6 +49,8 @@ import { IvyCarouselModule } from "angular-responsive-carousel";
 import { MissionPanelComponent } from './pages/about/panels/mission-panel/mission-panel.component';
 import { TestimonialPanelComponent } from './pages/about/panels/testimonial-panel/testimonial-panel.component';
 import { NewsletterPanelComponent } from './pages/about/panels/newsletter-panel/newsletter-panel.component';
+import { ContactPanelComponent } from './pages/contact/contact-panel/contact-panel.component';
+import { ContactPageComponent } from './pages/contact/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +91,9 @@ import { NewsletterPanelComponent } from './pages/about/panels/newsletter-panel/
     PopupComponent,
     MissionPanelComponent,
     TestimonialPanelComponent,
-    NewsletterPanelComponent
+    NewsletterPanelComponent,
+    ContactPanelComponent,
+    ContactPageComponent
   ],
   imports : [
     BrowserModule,
