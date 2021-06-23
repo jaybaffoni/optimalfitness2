@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector : 'app-training-page',
@@ -25,10 +26,14 @@ export class TrainingPageComponent implements OnInit {
     {path : './assets/images/sunrise.jpg'}
   ];
 
-  constructor() {
+  constructor(private router : Router) {
   }
 
   ngOnInit(): void {
+  }
+
+  contactUs(contactInfo): void {
+    this.router.navigateByUrl('/contact', { state: contactInfo });
   }
 
 }
