@@ -28,7 +28,7 @@ export class ContactPanelComponent implements OnInit {
     formData.append("Interests", this.interests);
     formData.append("Phone", this.phone);
     console.log(formData);
-    this.http.post("https://script.google.com/macros/s/AKfycbxCIFo14FZ-25PXE7DgIcONuJ-C3RBV0swqmbZVP64yQaCP65hWILbkHXid8HYL76c/exec", formData).subscribe(
+    this.http.post('https://script.google.com/macros/s/AKfycbywG3oyLJ24evjY_ba4lqjn3RYK16RBQ9WZbup4gGzijtwpgfFJMBTeADyPw7motW3H/exec', formData).subscribe(
       (response) => {
         console.log(response);
       },
