@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'in-home-panel',
@@ -14,10 +15,14 @@ export class InHomePanelComponent implements OnInit {
     {path : './assets/images/inhome4.jpg'}
   ];
 
-  constructor() {
+  constructor(private router : Router) {
   }
 
   ngOnInit(): void {
+  }
+
+  contactUs(contactInfo): void {
+    this.router.navigateByUrl('/contact', { state: contactInfo });
   }
 
 }

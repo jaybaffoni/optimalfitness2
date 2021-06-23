@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'contact-panel',
@@ -7,9 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactPanelComponent implements OnInit {
 
-  constructor() { }
+  @Input() interests : string = '';
+  public firstName : string = '';
+  public lastName : string = '';
+  public email : string = '';
+  public phone : string = '';
+
+  constructor(private http : HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(event) {
+    event.stopPropagation();
+    let formData: any = new FormData();
+    formData.append("First Name", this.firstName);
+    formData.append("Last Name", this.lastName);
+    formData.append("E-Mail", this.email);
+    formData.append("Interests", this.interests);
+    formData.append("Phone", this.phone);
+    console.log(formData);
+    this.http.post("https://script.google.com/macros/s/AKfycbxCIFo14FZ-25PXE7DgIcONuJ-C3RBV0swqmbZVP64yQaCP65hWILbkHXid8HYL76c/exec", formData).subscribe(
+      (response) => {
+        console.log(response);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 
 }

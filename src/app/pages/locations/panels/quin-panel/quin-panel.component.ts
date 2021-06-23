@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'quin-panel',
@@ -14,9 +15,13 @@ export class QuinPanelComponent implements OnInit {
 
   public address = '217 Commonwealth Ave, Boston MA 02116';
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
+  }
+
+  contactUs(contactInfo): void {
+    this.router.navigateByUrl('/contact', { state: contactInfo });
   }
 
 }

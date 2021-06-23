@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'home-landing-panel',
@@ -7,14 +8,14 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HomeLandingPanelComponent implements OnInit {
 
-  constructor() {
+  constructor(private router : Router) {
   }
 
   ngOnInit(): void {
   }
 
-  bookAppt(): void {
-
+  contactUs(contactInfo): void {
+    this.router.navigateByUrl('/contact', { state: contactInfo });
   }
 
 }

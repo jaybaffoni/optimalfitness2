@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector : 'beach-house-panel',
@@ -16,10 +17,14 @@ export class BeachHousePanelComponent implements OnInit {
     {path: './assets/images/Beach House Courts 2.jpg'},
   ];
 
-  constructor() {
+  constructor(private router : Router) {
   }
 
   ngOnInit(): void {
+  }
+
+  contactUs(contactInfo): void {
+    this.router.navigateByUrl('/contact', { state: contactInfo });
   }
 
 }

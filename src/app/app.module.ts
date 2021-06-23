@@ -51,6 +51,8 @@ import { TestimonialPanelComponent } from './pages/about/panels/testimonial-pane
 import { NewsletterPanelComponent } from './pages/about/panels/newsletter-panel/newsletter-panel.component';
 import { ContactPanelComponent } from './pages/contact/contact-panel/contact-panel.component';
 import { ContactPageComponent } from './pages/contact/contact-page/contact-page.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -95,7 +97,7 @@ import { ContactPageComponent } from './pages/contact/contact-page/contact-page.
     ContactPanelComponent,
     ContactPageComponent
   ],
-  imports : [
+  imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
@@ -106,7 +108,9 @@ import { ContactPageComponent } from './pages/contact/contact-page/contact-page.
     MatTabsModule,
     MatChipsModule,
     SlideshowModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [{
     provide: MatDialogRef,
